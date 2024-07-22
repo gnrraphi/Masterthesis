@@ -121,4 +121,8 @@ for i in range(1, 11):
 # pion mass fit
 c2_pi_avg = gv.dataset.avg_data(c2_pi)
 m_eff = np.mean(gv.log(c2_pi_avg / np.roll(c2_pi_avg, -1))[:3])
-g.message(f"m_pi = {m_eff}")
+g.message(f"Computed mass: m_pi = {m_eff}")
+
+# Reference value
+m_ref = gv.gvar("0.2309(8)") # https://doi.org/10.1016/0550-3213(94)90186-4
+g.message("Reference value: m_pi = {m_ref}")
