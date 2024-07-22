@@ -125,4 +125,4 @@ g.message(f"Computed mass: m_pi = {m_eff}")
 
 # Reference value
 m_ref = gv.gvar("0.2309(8)") # https://doi.org/10.1016/0550-3213(94)90186-4
-g.message("Reference value: m_pi = {m_ref}")
+g.message(f"Reference value: m_pi = {m_ref}")
